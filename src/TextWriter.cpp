@@ -18,8 +18,8 @@ TextWriter::TextWriter() {
     glyphSpacing = 1.5;
     glyphLineWeight = 2;
 	colour.set(20,200,20);
-	lineRandomness = 0.05;
-	colourFlickerMin = 0.9;
+	lineRandomness = 0;
+	colourFlickerMin = 1;
 	smooth = true; 
     
     glyphRatio = glyphHeight / (float)glyphWidth;
@@ -193,7 +193,7 @@ void TextWriter::draw(ofRectangle box, string text, bool centred) {
 	
     ofPopStyle();
 	
-	return writingMesh; 
+	//return writingMesh;
 }
 
 ofMesh TextWriter::getMesh(string line, ofVec3f pos, float size, bool centred) {

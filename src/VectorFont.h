@@ -209,13 +209,18 @@ public:
         letters['W'] = W;
         
         Letter X;
-		X.addLine(0, 0, 2, 3);
-		X.addLine(2, 3, 0, 6);
-		X.addLine(4, 0, 2, 3);
-		X.addLine(2, 3, 4, 6);
+		X.addLine(0, 0, 4, 6);
+		X.addLine(4, 0, 0, 6);
+		
         
         letters['X'] = X;
-        
+		
+		Letter x;
+		x.addLine(0, 0, 4, 6);
+		x.addLine(4, 0, 0, 6);
+		
+		letters['x'] = x;
+		
         Letter Y;
 		Y.addLine(0, 0, 2, 2);
 		Y.addLine(2, 2, 4, 0);

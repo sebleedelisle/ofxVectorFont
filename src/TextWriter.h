@@ -32,6 +32,7 @@ public:
 	void addGlyphToMesh(Letter&, ofRectangle, ofMesh& );
 	
 	
+	float glyphWidth, glyphHeight;
 	
 private:
     
@@ -40,7 +41,6 @@ private:
     void drawGlyph(Letter&, ofRectangle);
     void renderGlyph(Letter&, float, float);
 
-    float glyphWidth, glyphHeight;
     float glyphRatio;
     VectorFont font;
 };
